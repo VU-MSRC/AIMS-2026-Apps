@@ -24,7 +24,8 @@ OUTPUT_NAME = 'NAMEYOURIMZMLHERE'
 # Set to None if the library is already on PATH / LD_LIBRARY_PATH (Option B).
 
 SDK_PATH = r'C:\PATHTODLLHERE\timsdata.dll'
-# SDK_PATH = '/path/to/timsdata/linux64/libtimsdata.so'      # Linux example```
+# SDK_PATH = '/path/to/timsdata/linux64/libtimsdata.so'      # Linux example
+```
 
 To run this code, simply start at Cell 1 and click the play button through each cell and wait patiently for your imzML to build. The imzML will be available in your specified outputs folder. If you run into any issues, please commit them here or email madeline.colley@vanderbilt.edu. Please do not email me about setting up jupyter or anaconda! Google will be better than I am at helping you out there.
 
@@ -37,5 +38,6 @@ MZ_MIN    = 885.53
 MZ_MAX    = 885.55
 NORMALIZE = False   # set True to divide by TIC
 
-image = extract_ion_image(D_FOLDER, MZ_MIN, MZ_MAX, normalize=NORMALIZE)'''
+image = extract_ion_image(D_FOLDER, MZ_MIN, MZ_MAX, normalize=NORMALIZE)
+```
 
