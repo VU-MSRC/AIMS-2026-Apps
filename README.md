@@ -25,3 +25,17 @@ OUTPUT_NAME = 'NAMEYOURIMZMLHERE'
 
 SDK_PATH = r'C:\PATHTODLLHERE\timsdata.dll'
 # SDK_PATH = '/path/to/timsdata/linux64/libtimsdata.so'      # Linux example```
+
+To run this code, simply start at Cell 1 and click the play button through each cell and wait patiently for your imzML to build. The imzML will be available in your specified outputs folder. If you run into any issues, please commit them here or email madeline.colley@vanderbilt.edu. Please do not email me about setting up jupyter or anaconda! Google will be better than I am at helping you out there.
+
+## IonImager
+IonImager is another python based jupyter notebook used to display chosen m/z values from the Bruker .d (TSF, not TIMS) directly. This app is simple on purpose and is a proof-of-concept and starting point to build code to interpret, analyze and tinker with Bruker .d format data directly and without having to convert to other open-source data formats (e.g. imzML). My hope is that this snippet is an inspiring starting point for data scientists to build open-source apps and programs that can read imaging mass spectrometry data from the native format. If you are a user of other instrument vendors (e.g. Waters, Thermo, Shimadzu), I would look forward to working with you on data you have collected to build similar apps.
+
+Cell 4 is editable for your individual data set.
+'''D_FOLDER  = r"C:\YOUR\DATA\PATH\data.d"
+MZ_MIN    = 885.53
+MZ_MAX    = 885.55
+NORMALIZE = False   # set True to divide by TIC
+
+image = extract_ion_image(D_FOLDER, MZ_MIN, MZ_MAX, normalize=NORMALIZE)'''
+
